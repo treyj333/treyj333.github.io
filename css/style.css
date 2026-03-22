@@ -142,9 +142,27 @@ a:hover { color: var(--accent-hover); }
 /* Transition section between hero and about */
 .transition-section {
   text-align: center;
-  padding: 3rem 2rem 4rem;
+  padding: 1.5rem 2rem 2rem;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+}
+
+/* What I Build tags */
+.what-i-build {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.build-tag {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.4rem 1rem;
+  letter-spacing: 0.05em;
 }
 
 .transition-inner {

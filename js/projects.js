@@ -47,21 +47,11 @@ const PROJECTS = [
   {
     id: 'recon-scanner',
     name: 'Recon Scanner',
-    tagline: 'Android WiFi, Bluetooth Classic, and BLE reconnaissance scanner with WiGLE integration',
+    tagline: 'Android WiFi, Bluetooth, and BLE reconnaissance scanner with online/offline WiGLE integration',
     category: 'hardware',
-    tech: ['Kotlin', 'Jetpack Compose', 'WiGLE API', 'Hilt DI'],
-    description: 'Mobile intelligence tool for detecting and analyzing nearby wireless devices. Scans WiFi and Bluetooth signals to identify surrounding hardware, estimate signal strength, and lookup historical WiFi data via WiGLE cloud API. Features wireless QR code debugging for USB-free testing.',
+    tech: ['Kotlin', 'Jetpack Compose', 'WiGLE API', 'Hilt DI', 'Coroutines', 'Flow'],
+    description: 'Mobile intelligence tool for detecting and analyzing nearby wireless devices. Works online with WiGLE cloud API for historical WiFi lookup, or fully offline for field use. Scans WiFi, Bluetooth Classic, and BLE signals with RSSI-sorted results, automatic scan cycles, and reactive StateFlow UI. Built with MVVM architecture and Hilt dependency injection.',
     github: 'https://github.com/treyj333/reconscanneralpha',
-    snippets: ['wifi-scanner-vm.kt']
-  },
-  {
-    id: 'wifi-bt-scanner',
-    name: 'WiFi & BT Scanner',
-    tagline: 'Network scanning UI with Kotlin coroutines, StateFlow, and automatic scan cycles',
-    category: 'hardware',
-    tech: ['Kotlin', 'Jetpack Compose', 'Hilt', 'Coroutines', 'Flow'],
-    description: 'Clean Android app for WiFi and Bluetooth device scanning. Uses Kotlin StateFlow for reactive UI updates, automatic 10-second scan cycles with countdown, RSSI-sorted results, and conditional UI states (disabled, scanning, empty, results). Built with MVVM architecture and Hilt dependency injection.',
-    github: 'https://github.com/treyj333/wifi-bt-scanner',
     snippets: ['wifi-scanner-vm.kt']
   },
   {
@@ -157,10 +147,10 @@ const PROJECTS = [
   {
     id: 'orion-concept',
     name: 'Orion Concept Ops',
-    tagline: 'Operational concept system built in Python',
+    tagline: 'Task orchestration and operational planning system',
     category: 'chatbots',
-    tech: ['Python'],
-    description: 'Python-based operational concept system for Orion project management and execution.',
+    tech: ['Python', 'Automation', 'CLI'],
+    description: 'Python-based operational planning and task orchestration system for managing multi-phase project execution workflows. Structures complex operations into trackable, sequential steps.',
     github: 'https://github.com/treyj333/orion-concept-ops',
     snippets: []
   }
