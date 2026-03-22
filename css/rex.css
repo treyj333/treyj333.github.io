@@ -1,46 +1,29 @@
 /* ============================================
-   ASKORNOT ASCII ART ANIMATIONS
+   ASKORNOT PIXEL ART MASCOT
    ============================================ */
 
-/* Hero Askornot */
-.rex-art {
-  font-family: 'VT323', monospace;
-  font-size: 0.55rem;
-  line-height: 1.0;
-  color: var(--accent);
-  white-space: pre;
+/* Hero Askornot SVG */
+.askornot-svg {
+  width: 120px;
+  height: auto;
   user-select: none;
-  transition: text-shadow 0.3s, transform 0.3s;
-  margin: 0;
+  transition: transform 0.3s, filter 0.3s;
+  animation: float 3s ease-in-out infinite;
 }
 
-.rex-art:hover {
-  text-shadow: 0 0 15px rgba(135, 215, 135, 0.5);
-  transform: scale(1.05);
+.askornot-svg:hover {
+  filter: drop-shadow(0 0 15px rgba(135, 215, 135, 0.6));
+  transform: scale(1.1);
 }
 
-/* Askornot idle animation via opacity toggling */
-.rex-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.15s;
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }
 
-.rex-container {
-  position: relative;
-  display: inline-block;
-}
-
-/* Walking Askornot frames */
-.walk-frame {
-  transition: opacity 0.1s;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.walk-container {
-  position: relative;
-  display: inline-block;
+/* Walking Askornot at bottom */
+.walking-askornot-svg {
+  width: 40px;
+  height: auto;
+  user-select: none;
 }
