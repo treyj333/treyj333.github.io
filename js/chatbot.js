@@ -18,7 +18,7 @@ const KNOWLEDGE = {
 
   skills: 'Process Optimization Audits, Secure AI Systems for Regulated Environments, Edge AI, Computer Vision, Wireless Automation, LoRa Mesh Networking, Offline LLM Architectures, Python, Kotlin, JavaScript, TypeScript, React, Node.js, SQLite, Claude API, Gemini, Ollama, llama.cpp, Raspberry Pi, ESP32, Jetpack Compose, Playwright, Pinecone, n8n',
 
-  certifications: 'MIT Professional Education No Code and Agentic AI, Master Barber License',
+  certifications: 'MIT Professional Education No Code and Agentic AI',
 
   patent: 'MANNEQUIN HEAD HOLDER (patent pending) — a training device developed through his company Atalva',
 
