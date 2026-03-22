@@ -47,10 +47,10 @@ const PROJECTS = [
   {
     id: 'recon-scanner',
     name: 'Recon Scanner',
-    tagline: 'Android WiFi, Bluetooth, and BLE reconnaissance scanner with online/offline WiGLE integration',
+    tagline: 'Android reconnaissance scanner for tracking and counter-tracking wireless devices',
     category: 'hardware',
     tech: ['Kotlin', 'Jetpack Compose', 'WiGLE API', 'Hilt DI', 'Coroutines', 'Flow'],
-    description: 'Mobile intelligence tool for detecting and analyzing nearby wireless devices. Works online with WiGLE cloud API for historical WiFi lookup, or fully offline for field use. Scans WiFi, Bluetooth Classic, and BLE signals with RSSI-sorted results, automatic scan cycles, and reactive StateFlow UI. Built with MVVM architecture and Hilt dependency injection.',
+    description: 'Mobile intelligence tool for tracking and counter-tracking nearby wireless devices. Scans WiFi, Bluetooth Classic, and BLE signals to detect, identify, and analyze surrounding hardware. Works online with WiGLE cloud API for historical WiFi lookup, or fully offline for field use. Features RSSI-sorted results, automatic scan cycles, and reactive StateFlow UI. Built with MVVM architecture and Hilt dependency injection.',
     github: 'https://github.com/treyj333/reconscanneralpha',
     snippets: ['wifi-scanner-vm.kt']
   },
