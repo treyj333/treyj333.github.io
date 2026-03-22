@@ -1,11 +1,11 @@
 /* ============================================
-   REX ASCII ART ANIMATIONS
+   ASKORNOT ASCII ART ANIMATIONS
    ============================================ */
 
-/* Hero REX */
+/* Hero Askornot */
 .rex-art {
   font-family: 'VT323', monospace;
-  font-size: 0.6rem;
+  font-size: 0.85rem;
   line-height: 1.1;
   color: var(--accent);
   white-space: pre;
@@ -19,7 +19,7 @@
   transform: scale(1.05);
 }
 
-/* REX idle animation via opacity toggling */
+/* Askornot idle animation via opacity toggling */
 .rex-frame {
   position: absolute;
   top: 0;
@@ -32,7 +32,7 @@
   display: inline-block;
 }
 
-/* Walking REX frames */
+/* Walking Askornot frames */
 .walk-frame {
   transition: opacity 0.1s;
   position: absolute;

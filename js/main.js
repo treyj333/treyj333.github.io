@@ -25,7 +25,7 @@ async function runBootSequence() {
   const bootLines = [
     { text: '> initializing portfolio...', delay: 400 },
     { text: '> loading projects [16 found]', delay: 600 },
-    { text: '> waking up REX...', delay: 500 },
+    { text: '> waking up Askornot...', delay: 500 },
     { text: '> READY', delay: 300, className: 'ready' }
   ];
 

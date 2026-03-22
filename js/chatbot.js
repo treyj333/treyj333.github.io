@@ -1,5 +1,5 @@
 /* ============================================
-   REX CHATBOT
+   ASKORNOT CHATBOT
    Static knowledge-based chatbot that answers
    questions about Marvin Johnson using a local
    knowledge base. No API calls needed.
@@ -16,9 +16,9 @@ const KNOWLEDGE = {
 
   summary: 'Marvin builds offline-capable, real-world AI systems for environments where reliability, privacy, and efficiency matter. His work sits at the intersection of applied AI, edge computer vision, wireless systems, and automation. He\'s not a traditional coder or engineer. He\'s a problem solver, efficiency nerd, and waste eliminator who figures things out and thinks outside the box. He has a deep understanding of how to learn complex tasks quickly and turns inefficiencies into resilient, autonomous solutions.',
 
-  skills: 'Building Automation Systems (BAS), Process Optimization Audits, Secure AI Systems for Regulated Environments, Edge AI, Computer Vision, Wireless Automation, LoRa Mesh Networking, Offline LLM Architectures, Python, Kotlin, JavaScript, TypeScript, React, Node.js, SQLite, Claude API, Gemini, Ollama, llama.cpp, Raspberry Pi, ESP32, Jetpack Compose, Playwright, Pinecone, n8n',
+  skills: 'Process Optimization Audits, Secure AI Systems for Regulated Environments, Edge AI, Computer Vision, Wireless Automation, LoRa Mesh Networking, Offline LLM Architectures, Python, Kotlin, JavaScript, TypeScript, React, Node.js, SQLite, Claude API, Gemini, Ollama, llama.cpp, Raspberry Pi, ESP32, Jetpack Compose, Playwright, Pinecone, n8n',
 
-  certifications: 'MIT Professional Education No Code and Agentic AI, FAA Part 107 Commercial Drone Operators License, Master Barber License',
+  certifications: 'MIT Professional Education No Code and Agentic AI, Master Barber License',
 
   patent: 'MANNEQUIN HEAD HOLDER (patent pending) — a training device developed through his company Atalva',
 
@@ -53,7 +53,7 @@ function getResponse(input) {
 
   // Greetings
   if (/^(hi|hello|hey|sup|yo|what'?s up)/i.test(q)) {
-    return `Hey! I'm REX, Marvin's digital assistant. Ask me about his projects, experience, skills, or anything else. I only deal in facts.`;
+    return `Hey! I'm Askornot, Marvin's digital assistant. Ask me about his projects, experience, skills, or anything else. I only deal in facts.`;
   }
 
   // Name
@@ -175,12 +175,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     chatInput.value = '';
 
-    // REX response (with small delay for effect)
+    // Askornot response (with small delay for effect)
     setTimeout(() => {
       const response = getResponse(text);
       const rexMsg = document.createElement('div');
       rexMsg.className = 'chat-message rex-message';
-      rexMsg.innerHTML = `<span class="chat-sender">REX&gt;</span> ${escapeHtml(response)}`;
+      rexMsg.innerHTML = `<span class="chat-sender">ASKORNOT&gt;</span> ${escapeHtml(response)}`;
       chatMessages.appendChild(rexMsg);
       chatMessages.scrollTop = chatMessages.scrollHeight;
     }, 300);

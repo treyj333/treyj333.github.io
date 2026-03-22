@@ -1,92 +1,77 @@
 /* ============================================
-   REX ASCII MASCOT
-   Hero: idle animation + hover roar + typewriter entrance
+   ASKORNOT ASCII MASCOT
+   Hero: idle animation + hover wave + typewriter entrance
    Footer: walking + chat bubble
    ============================================ */
 
-const REX_FRAMES = {
+const ASKORNOT_FRAMES = {
   idle1: `
-         __
-        / _)
-       / /
-  ____/ /
- /      \\
-| o   o |
-|   __  |
- \\  \\/  /
-  |    |
-  |    |
- _|    |_
-|  \\  /  |
-|   ||   |
- \\  ||  /
-  | || |
-  |_||_|
-  (_ |_)`,
+    .----.
+   /  __  \\
+  |  |  |  |
+  |  |__|  |
+   \\      /
+    |    |
+    |    |
+   /|    |\\
+  / |    | \\
+ /   \\  /   \\
+      ||
+     _/\\_`,
 
   idle2: `
-         __
-        / _)
-       / /
-  ____/ /
- /      \\
-| o   o |
-|   __  |
- \\  \\/  /
-  |    |
-  |    |
- _|    |_
-|  \\  /  |
-|   ||   |
- \\  ||  /
-  |_|| |
-  (_|| )
-     |_)`,
+    .----.
+   /  __  \\
+  |  |  |  |
+  |  |__|  |
+   \\      /
+    |    |
+    |    |
+   /|    |\\
+  / |    | \\
+ /  |    |  \\
+     \\  /
+     _/\\_`,
 
-  roar: `
-         __
-        / _)
-       / /
-  ____/ /
- /      \\
-| O   O |
-|  ____  |
-| /    \\ |
- |  !!  |
-  |    |
- _|    |_
-|  \\  /  |
-|   ||   |
- \\  ||  /
-  | || |
-  |_||_|
-  (_ |_)`
+  wave: `
+    .----.
+   /  __  \\
+  |  |  |  |
+  |  |__|  |
+   \\      /
+    |    | _
+    |    |/ )
+   /|    |
+  / |    | \\
+ /   \\  /   \\
+      ||
+     _/\\_`
 };
 
 const WALK_FRAMES = {
-  walk1: `    __\n   / _)\n  / /\n_/ / \n\\_/\\ \n|o o|\n| > |\n/| |\\`,
+  walk1: `  .---.\n / __ \\\n| |__| |\n \\    /\n  |  |\n /|  |\\\n/ \\  / \\\n   ||`,
 
-  walk2: `    __\n   / _)\n  / /\n_/ / \n\\_/\\ \n|o o|\n| > |\n\\| |/`
+  walk2: `  .---.\n / __ \\\n| |__| |\n \\    /\n  |  |\n /|  |\\\n |\\  /|\n  ||`
 };
 
-// Hero REX
-(function initHeroRex() {
-  const rexEl = document.getElementById('rex-art');
-  if (!rexEl) return;
+// Hero Askornot
+(function initHeroAskornot() {
+  const artEl = document.getElementById('rex-art');
+  if (!artEl) return;
 
-  const frames = [REX_FRAMES.idle1, REX_FRAMES.idle2];
+  const frames = [ASKORNOT_FRAMES.idle1, ASKORNOT_FRAMES.idle2];
   let currentFrame = 0;
   let idleInterval = null;
   let entranceDone = false;
 
   // Typewriter entrance
-  const text = REX_FRAMES.idle1;
+  const text = ASKORNOT_FRAMES.idle1;
   let charIndex = 0;
-  rexEl.textContent = '';
+  artEl.textContent = '';
 
   const entranceInterval = setInterval(() => {
     if (charIndex < text.length) {
-      rexEl.textContent += text[charIndex];
+      artEl.textContent += text[charIndex];
       charIndex++;
     } else {
       clearInterval(entranceInterval);
@@ -98,24 +83,24 @@ const WALK_FRAMES = {
   function startIdle() {
     idleInterval = setInterval(() => {
       currentFrame = (currentFrame + 1) % frames.length;
-      rexEl.textContent = frames[currentFrame];
+      artEl.textContent = frames[currentFrame];
     }, 800);
   }
 
-  rexEl.parentElement.addEventListener('mouseenter', () => {
+  artEl.parentElement.addEventListener('mouseenter', () => {
     if (!entranceDone) return;
     if (idleInterval) clearInterval(idleInterval);
-    rexEl.textContent = REX_FRAMES.roar;
+    artEl.textContent = ASKORNOT_FRAMES.wave;
   });
 
-  rexEl.parentElement.addEventListener('mouseleave', () => {
+  artEl.parentElement.addEventListener('mouseleave', () => {
     if (!entranceDone) return;
     startIdle();
   });
 })();
 
-// Walking REX at bottom of screen
-(function initWalkingRex() {
+// Walking Askornot at bottom of screen
+(function initWalkingAskornot() {
   const walkEl = document.getElementById('walking-rex-art');
   if (!walkEl) return;
 
