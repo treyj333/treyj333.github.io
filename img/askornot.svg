@@ -1,55 +1,46 @@
-<svg viewBox="0 0 22 32" xmlns="http://www.w3.org/2000/svg">
-<!-- Simple 8-bit pixel astronaut on a 22x32 grid, 1px = 1 pixel -->
+<svg viewBox="0 0 16 22" xmlns="http://www.w3.org/2000/svg">
+<!-- Cute chibi astronaut: big head, small body -->
 
-<!-- Helmet -->
-<rect x="7" y="0" width="8" height="1" fill="#6abf6a"/>
-<rect x="6" y="1" width="10" height="1" fill="#6abf6a"/>
-<rect x="5" y="2" width="12" height="1" fill="#6abf6a"/>
-<rect x="5" y="3" width="12" height="1" fill="#6abf6a"/>
-<rect x="5" y="4" width="12" height="1" fill="#6abf6a"/>
-<rect x="5" y="5" width="12" height="1" fill="#6abf6a"/>
-<rect x="5" y="6" width="12" height="1" fill="#6abf6a"/>
-<rect x="6" y="7" width="10" height="1" fill="#6abf6a"/>
-<rect x="7" y="8" width="8" height="1" fill="#6abf6a"/>
+<!-- Helmet (big round) -->
+<rect x="4" y="0" width="8" height="1" fill="#6abf6a"/>
+<rect x="3" y="1" width="10" height="1" fill="#6abf6a"/>
+<rect x="2" y="2" width="12" height="1" fill="#6abf6a"/>
+<rect x="2" y="3" width="12" height="1" fill="#6abf6a"/>
+<rect x="2" y="4" width="12" height="1" fill="#6abf6a"/>
+<rect x="2" y="5" width="12" height="1" fill="#6abf6a"/>
+<rect x="2" y="6" width="12" height="1" fill="#6abf6a"/>
+<rect x="2" y="7" width="12" height="1" fill="#6abf6a"/>
+<rect x="2" y="8" width="12" height="1" fill="#6abf6a"/>
+<rect x="3" y="9" width="10" height="1" fill="#6abf6a"/>
+<rect x="4" y="10" width="8" height="1" fill="#6abf6a"/>
 
-<!-- Visor -->
-<rect x="7" y="3" width="8" height="1" fill="#c8860a"/>
-<rect x="7" y="4" width="8" height="3" fill="#ffaf00"/>
-<rect x="7" y="7" width="8" height="1" fill="#c8860a"/>
+<!-- Visor (amber, big and centered) -->
+<rect x="4" y="4" width="8" height="1" fill="#c8860a"/>
+<rect x="4" y="5" width="8" height="3" fill="#ffaf00"/>
+<rect x="4" y="8" width="8" height="1" fill="#c8860a"/>
 
-<!-- Neck -->
-<rect x="8" y="9" width="6" height="1" fill="#3d8b3d"/>
+<!-- Visor shine -->
+<rect x="5" y="5" width="2" height="1" fill="#ffe066" opacity="0.6"/>
 
-<!-- Body -->
-<rect x="6" y="10" width="10" height="1" fill="#87d787"/>
-<rect x="5" y="11" width="12" height="1" fill="#87d787"/>
-<rect x="5" y="12" width="12" height="6" fill="#87d787"/>
-<rect x="6" y="18" width="10" height="1" fill="#87d787"/>
+<!-- Body (small) -->
+<rect x="5" y="11" width="6" height="1" fill="#87d787"/>
+<rect x="5" y="12" width="6" height="1" fill="#87d787"/>
+<rect x="5" y="13" width="6" height="1" fill="#87d787"/>
+<rect x="5" y="14" width="6" height="1" fill="#87d787"/>
 
-<!-- Chest panel -->
-<rect x="8" y="13" width="6" height="3" fill="#1a3a1a"/>
-<rect x="9" y="14" width="1" height="1" fill="#ff4444"/>
-<rect x="11" y="14" width="1" height="1" fill="#00ff41"/>
-<rect x="13" y="14" width="1" height="1" fill="#ffaf00"/>
+<!-- Chest dot -->
+<rect x="7" y="12" width="2" height="1" fill="#00ff41"/>
 
-<!-- Arms -->
-<rect x="2" y="11" width="3" height="1" fill="#87d787"/>
-<rect x="1" y="12" width="4" height="5" fill="#87d787"/>
-<rect x="1" y="17" width="4" height="1" fill="#3d8b3d"/>
+<!-- Arms (stubby) -->
+<rect x="3" y="12" width="2" height="3" fill="#87d787"/>
+<rect x="11" y="12" width="2" height="3" fill="#87d787"/>
 
-<rect x="17" y="11" width="3" height="1" fill="#87d787"/>
-<rect x="17" y="12" width="4" height="5" fill="#87d787"/>
-<rect x="17" y="17" width="4" height="1" fill="#3d8b3d"/>
+<!-- Legs (short) -->
+<rect x="5" y="15" width="2" height="3" fill="#87d787"/>
+<rect x="9" y="15" width="2" height="3" fill="#87d787"/>
 
-<!-- Waist -->
-<rect x="6" y="19" width="10" height="1" fill="#3d8b3d"/>
-
-<!-- Left leg -->
-<rect x="6" y="20" width="4" height="5" fill="#87d787"/>
-<rect x="5" y="25" width="5" height="2" fill="#3d8b3d"/>
-
-<!-- Right leg -->
-<rect x="12" y="20" width="4" height="5" fill="#87d787"/>
-<rect x="12" y="25" width="5" height="2" fill="#3d8b3d"/>
+<!-- Boots -->
+<rect x="4" y="18" width="3" height="1" fill="#3d8b3d"/>
+<rect x="9" y="18" width="3" height="1" fill="#3d8b3d"/>
 
 </svg>
