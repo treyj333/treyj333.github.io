@@ -20,12 +20,12 @@ const KNOWLEDGE = {
 
   certifications: 'MIT Professional Education No Code and Agentic AI',
 
-  patent: 'MANNEQUIN HEAD HOLDER (patent pending) — a training device developed through his company Atalva',
+  patent: '',
 
   experience: [
     { company: 'M&M Services and Solutions LLC', role: 'Founder / Applied AI / Systems Builder', dates: 'January 2023 to Present', desc: 'Independently leads the design and deployment of applied AI, edge computer vision, and wireless automation systems, reducing operational inefficiencies through offline-capable architectures.' },
     { company: 'AirsoftX', role: 'Founder', dates: 'January 2025 to Present', desc: 'Built booking and event systems that scaled participation at the 4th largest paintball and airsoft facility in the world. The system now operates autonomously.' },
-    { company: 'Atalva', role: 'Co-Founder / Product Design', dates: 'March 2023 to January 2026', desc: 'Developed and commercialized a patent-pending training device and secured contracts with the South Carolina Department of Education.' },
+    { company: 'Atalva', role: 'Co-Founder / Product Design', dates: 'March 2023 to January 2026', desc: 'Developed and commercialized a training device and secured contracts with the South Carolina Department of Education.' },
     { company: 'The Mailroom Barber Co', role: 'Marketing / Operations Lead', dates: 'August 2021 to November 2024', desc: 'Drove substantial revenue growth through automation, digital systems, and operational optimization.' },
     { company: 'The Brand Mule', role: 'Web Designer', dates: 'February 2021 to October 2024', desc: 'Web design work for clients.' },
     { company: 'US Army', role: 'Joint Fire Support Specialist & Operations Manager', dates: 'June 2018 to June 2021', desc: 'Military service at Fort Bragg (now Fort Liberty), Fayetteville, North Carolina.' }
@@ -73,12 +73,12 @@ function getResponse(input) {
 
   // Certifications
   if (q.includes('cert') || q.includes('education') || q.includes('degree') || q.includes('mit') || q.includes('license') || q.includes('qualified')) {
-    return `Certifications: ${KNOWLEDGE.certifications}. He's also a US Army veteran and holds a patent.`;
+    return `Certifications: ${KNOWLEDGE.certifications}. He's also a US Army veteran.`;
   }
 
-  // Patent
-  if (q.includes('patent') || q.includes('invention') || q.includes('atalva') || q.includes('mannequin')) {
-    return `Marvin holds a patent pending for the ${KNOWLEDGE.patent}.`;
+  // Atalva
+  if (q.includes('atalva')) {
+    return `Marvin co-founded Atalva, where he developed and commercialized a training device and secured contracts with the South Carolina Department of Education.`;
   }
 
   // Military / Army
