@@ -27,3 +27,4 @@ Built complete single-page portfolio site from scratch:
 - **Mascot:** Replaced REX (T-Rex) with Askornot (cute ASCII astronaut, Among Us bean style). Updated all frames, labels, chat titles, and chatbot references.
 - **Removed:** FAA Part 107 Drone cert and Building Automation (BAS) from skills cloud, contact section, and chatbot knowledge base.
 - **Added:** MIT Professional Education No Code and Agentic AI certification (was already present).
+- **Layout:** Moved Askornot mascot + boot sequence out of hero into a transition section between hero and About. Hero now shows name/title/tagline/links only.
