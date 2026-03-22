@@ -5,8 +5,8 @@
 /* Hero Askornot */
 .rex-art {
   font-family: 'VT323', monospace;
-  font-size: 0.85rem;
-  line-height: 1.1;
+  font-size: 0.55rem;
+  line-height: 1.0;
   color: var(--accent);
   white-space: pre;
   user-select: none;

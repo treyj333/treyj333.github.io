@@ -958,7 +958,7 @@ a:hover { color: var(--accent-hover); }
 @media (max-width: 768px) {
   .hero-name { font-size: 2.5rem; }
 
-  .rex-art { font-size: 0.4rem !important; }
+  .rex-art { font-size: 0.35rem !important; }
 
   .about-stats { gap: 1.5rem; }
 
