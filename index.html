@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvin Johnson | Applied AI & Systems Builder</title>
+  <meta name="description" content="Portfolio of Marvin Johnson III — Applied AI & Systems Builder specializing in offline-first AI, edge computer vision, and wireless automation.">
+  <meta property="og:title" content="Marvin Johnson | Applied AI & Systems Builder">
+  <meta property="og:description" content="Offline-First AI, Edge Computer Vision, Wireless Automation. Turning inefficiencies into resilient systems.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Prism.js syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rex.css">
+</head>
+<body>
+  <!-- Scanline overlay -->
+  <div class="scanline-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MJ</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#snippets">Code</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="boot-sequence" id="boot-sequence"></div>
+        <h1 class="hero-name" id="hero-name">MARVIN JOHNSON</h1>
+        <p class="hero-title">APPLIED AI & SYSTEMS BUILDER</p>
+        <p class="hero-tagline" id="hero-tagline"></p>
+        <div class="hero-links">
+          <a href="https://github.com/treyj333" target="_blank" rel="noopener" class="hero-link">[ GITHUB ]</a>
+          <a href="https://www.linkedin.com/in/marvin-johnson-89ba82210/" target="_blank" rel="noopener" class="hero-link">[ LINKEDIN ]</a>
+          <a href="mailto:marvin.r.johnson89@gmail.com" class="hero-link">[ EMAIL ]</a>
+        </div>
+      </div>
+      <div class="hero-rex" id="hero-rex">
+        <pre class="rex-art" id="rex-art" aria-label="REX the ASCII T-Rex mascot"></pre>
+        <span class="rex-label">REX</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <h2 class="section-heading"><span class="prompt">&gt;</span> about.md</h2>
+      <div class="about-content">
+        <div class="about-bio">
+          <p>I build offline-capable, real-world AI systems for environments where reliability, privacy, and efficiency matter more than buzzwords. My work sits at the intersection of applied AI, edge computer vision, wireless systems, and automation.</p>
+          <p>I'm not a traditional engineer. I'm a problem solver, efficiency nerd, and waste eliminator who figures stuff out and thinks outside the box. US Army veteran, patent holder, and founder of multiple companies. I learn complex tasks quickly and turn inefficiencies into resilient, autonomous solutions.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">16+</span>
+            <span class="stat-label">PROJECTS</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">LANGUAGES</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">YEARS BUILDING</span>
+          </div>
+        </div>
+        <div class="skills-cloud">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Kotlin</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Claude API</span>
+          <span class="skill-tag">Gemini</span>
+          <span class="skill-tag">Ollama</span>
+          <span class="skill-tag">llama.cpp</span>
+          <span class="skill-tag">Edge AI</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Raspberry Pi</span>
+          <span class="skill-tag">ESP32</span>
+          <span class="skill-tag">LoRa Mesh</span>
+          <span class="skill-tag">Android / Jetpack Compose</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">Playwright</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">Pinecone</span>
+          <span class="skill-tag">n8n</span>
+          <span class="skill-tag">Building Automation (BAS)</span>
+          <span class="skill-tag">Process Optimization</span>
+          <span class="skill-tag">FAA Part 107 Drone</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <h2 class="section-heading"><span class="prompt">&gt;</span> ls projects/</h2>
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="project-grid" id="project-grid"></div>
+    </div>
+  </section>
+
+  <!-- Code Snippets Section -->
+  <section class="section" id="snippets">
+    <div class="section-inner">
+      <h2 class="section-heading"><span class="prompt">&gt;</span> cat snippets/*</h2>
+      <p class="section-desc">Real code from real projects. Click "View Code" on any project above, or browse the highlights below.</p>
+      <div class="snippets-container" id="snippets-container"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <h2 class="section-heading"><span class="prompt">&gt;</span> contact --reach-out</h2>
+      <div class="contact-terminal">
+        <div class="contact-line">
+          <span class="prompt">$</span> echo $EMAIL
+          <a href="mailto:marvin.r.johnson89@gmail.com" class="contact-value">marvin.r.johnson89@gmail.com</a>
+        </div>
+        <div class="contact-line">
+          <span class="prompt">$</span> open $GITHUB
+          <a href="https://github.com/treyj333" target="_blank" rel="noopener" class="contact-value">github.com/treyj333</a>
+        </div>
+        <div class="contact-line">
+          <span class="prompt">$</span> open $LINKEDIN
+          <a href="https://www.linkedin.com/in/marvin-johnson-89ba82210/" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/marvin-johnson-89ba82210</a>
+        </div>
+        <div class="contact-line">
+          <span class="prompt">$</span> cat certifications.txt
+          <span class="contact-value">MIT No Code & Agentic AI | FAA Part 107 | Master Barber License</span>
+        </div>
+        <div class="contact-line">
+          <span class="prompt">$</span> cat patent.txt
+          <span class="contact-value">MANNEQUIN HEAD HOLDER (Patent Pending)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-text">Built with terminal aesthetics and real code. No purple gradients.</span>
+      <span class="footer-text">&copy; 2026 Marvin Johnson III</span>
+    </div>
+  </footer>
+
+  <!-- Walking REX (fixed at bottom) -->
+  <div class="walking-rex" id="walking-rex">
+    <div class="chat-bubble" id="chat-bubble">Click me to ask about Marvin and his projects!</div>
+    <pre class="walking-rex-art" id="walking-rex-art"></pre>
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-window" id="chat-window">
+    <div class="chat-titlebar">
+      <span class="chat-title">REX &gt; marvin_info --interactive</span>
+      <button class="chat-close" id="chat-close" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-message rex-message">
+        <span class="chat-sender">REX&gt;</span> Hey! I'm REX. Ask me anything about Marvin, his projects, or his experience. I only deal in facts.
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <span class="chat-input-prompt">&gt;</span>
+      <input type="text" class="chat-input" id="chat-input" placeholder="Ask about Marvin..." autocomplete="off">
+      <button class="chat-send" id="chat-send">SEND</button>
+    </div>
+  </div>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title"></h3>
+        <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-kotlin.min.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/rex.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

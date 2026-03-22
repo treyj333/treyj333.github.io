@@ -1,0 +1,46 @@
+/* ============================================
+   REX ASCII ART ANIMATIONS
+   ============================================ */
+
+/* Hero REX */
+.rex-art {
+  font-family: 'VT323', monospace;
+  font-size: 0.6rem;
+  line-height: 1.1;
+  color: var(--accent);
+  white-space: pre;
+  user-select: none;
+  transition: text-shadow 0.3s, transform 0.3s;
+  margin: 0;
+}
+
+.rex-art:hover {
+  text-shadow: 0 0 15px rgba(135, 215, 135, 0.5);
+  transform: scale(1.05);
+}
+
+/* REX idle animation via opacity toggling */
+.rex-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.15s;
+}
+
+.rex-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Walking REX frames */
+.walk-frame {
+  transition: opacity 0.1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.walk-container {
+  position: relative;
+  display: inline-block;
+}
